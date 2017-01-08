@@ -1,7 +1,7 @@
 module.exports = {
   paths: {
     img: 'assets/**/*.{jpg,png,svg}',
-    pugDev: 'src/index.pug',
+    pugDev: 'src/index-dev.pug',
     pugBuild: 'src/index-build.pug',
     pugWatch: 'src/**/*.pug',
     stylus: 'src/stylesheets/main.styl',
