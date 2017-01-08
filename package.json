@@ -1,0 +1,30 @@
+{
+  "name": "mortgage-vs-deposit",
+  "version": "1.0.0",
+  "description": "comparision calc",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pure-js/mortgage-vs-deposit.git"
+  },
+  "author": "pure-js",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/pure-js/mortgage-vs-deposit/issues"
+  },
+  "homepage": "https://github.com/pure-js/mortgage-vs-deposit#readme",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-stylus": "^2.6.0"
+  }
+}
