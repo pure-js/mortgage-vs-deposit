@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mortgage vs term deposit comparison</title>
+    <link rel="stylesheet" href="materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Mortgage calculator</h1>
+    <form class="form">
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <label>Loan amount</label>
+          <input id="loan-amount" type="text" value="4000000">
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <label>Percent per year</label>
+          <input type="text" value="12">
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <label>Loan term</label>
+          <input id="loan-term" type="text" value="10">
+          <select>
+            <option>Years</option>
+            <option>Months</option>
+          </select>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <h3>Start date</h3>
+          <label>Day</label>
+          <input id="start-day" type="text">
+          <label>Month</label>
+          <select id="start-month">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+          <label>Year</label>
+          <input id="start-year" type="text">
+        </div>
+      </div>
+      <h2>Mortgage Repayment Summary</h2>
+      <div class="cell">Loan pay-off date</div>
+      <div id="pay-off-date"></div>
+      <div class="cell">Monthly payment</div>
+      <div id="monthly-payment">343434</div>
+      <h2>Monthly Amortization Schedule</h2>
+      <div class="table">
+        <div class="table__cell" style="width: 20%;">№</div>
+        <div class="table__cell" style="width: 20%;">Date</div>
+        <div class="table__cell" style="width: 20%;">Summ</div>
+        <div class="table__cell" style="width: 20%;">Credit in summ</div>
+        <div class="table__cell" style="width: 20%;">Percentage in summ</div>
+        <div class="table__cell" style="width: 20%;">Credit balance</div>
+        <div class="table__cell" style="width: 20%;">№</div>
+        <div class="table__cell" style="width: 20%;">Date</div>
+        <div class="table__cell" style="width: 20%;">Summ</div>
+        <div class="table__cell" style="width: 20%;">Credit un summ</div>
+        <div class="table__cell" style="width: 20%;">Percentage in summ</div>
+        <div class="table__cell" style="width: 20%;">Credit balance</div>
+      </div>
+      <script src="calc.js"></script>
+      <script src="main.js"></script>
+    </form>
+  </body>
+</html>
