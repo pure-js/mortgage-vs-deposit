@@ -1,14 +1,29 @@
 module.exports = {
   paths: {
     img: 'assets/**/*.{jpg,png,svg}',
+    css: 'node_modules/materialize-css/dist/css/materialize.min.css',
     pugDev: 'src/index-dev.pug',
     pugBuild: 'src/index-build.pug',
     pugWatch: 'src/**/*.pug',
     stylus: 'src/stylesheets/main.styl',
     stylusWatch: 'src/**/*.styl',
-    jsES5: ['node_modules/fg-loadcss/src/cssrelpreload.js', 'node_modules/fg-loadcss/src/loadCSS.js'],
-    jsES6: ['src/js/*.js'],
-    jsConcat: ['build/cssrelpreload.js', 'build/loadCSS.js', 'build/load.js', 'build/entry.js', 'build/toggle.js', 'build/anchor-click.js', 'build/fixed-nav.js', 'build/main.js'],
+    jsES5: [
+      'node_modules/fg-loadcss/src/cssrelpreload.js',
+      'node_modules/fg-loadcss/src/loadCSS.js'
+    ],
+    jsES6: [
+      'src/js/*.js'
+    ],
+    jsConcat: [
+      'build/cssrelpreload.js',
+      'build/loadCSS.js',
+      'build/load.js',
+      'build/entry.js',
+      'build/toggle.js',
+      'build/anchor-click.js',
+      'build/fixed-nav.js',
+      'build/main.js'
+    ],
     get js() {
       return this.jsES5.concat(this.jsES6)
     },

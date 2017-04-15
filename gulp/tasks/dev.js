@@ -36,8 +36,8 @@ function js() {
 }
 
 function copy() {
-  return gulp.src(paths.img)
-    .pipe(gulp.dest(paths.dev + 'img'))
+  return gulp.src(paths.css)
+    .pipe(gulp.dest(paths.dev))
 }
 
 function copyFonts() {
@@ -49,8 +49,7 @@ function copyFonts() {
 function serve() {
   browserSync.init({
     server: {
-      baseDir: paths.dev,
-      index: 'index.html'
+      baseDir: paths.dev
     },
     browser: ['chrome', 'google chrome']
   });
