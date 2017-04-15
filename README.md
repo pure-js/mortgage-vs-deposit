@@ -5,3 +5,9 @@ Comparison app
 ```
 npm start
 ```
+
+## Deploying
+
+```
+npm run deploy
+```
