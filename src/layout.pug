@@ -1,0 +1,64 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title Mortgage vs term deposit comparison
+    block stylesheets
+  body
+    h1 Mortgage calculator
+    form.form
+      .row
+        .col-xs-12.col-md-4
+          label Loan amount
+          input#loan-amount(type='text', value='4000000')
+        .col-xs-12.col-md-4
+          label Percent per year
+          input(type='text', value='12')
+        .col-xs-12.col-md-4
+          label Loan term
+          input#loan-term(type='text', value='10')
+          select
+            option Years
+            option Months
+        .col-xs-12.col-md-4
+          h3 Start date
+          label Day
+          input#start-day(type='text')
+          label Month
+          select#start-month
+            option January
+            option February
+            option March
+            option April
+            option May
+            option June
+            option July
+            option August
+            option September
+            option October
+            option November
+            option December
+          label Year
+          input#start-year(type='text')
+      h2 Mortgage Repayment Summary
+      .cell Loan pay-off date
+      #pay-off-date
+      .cell Monthly payment
+      #monthly-payment 343434
+      h2 Monthly Amortization Schedule
+      .table
+        .table__cell(style='width: 20%') №
+        .table__cell(style='width: 20%') Date
+        .table__cell(style='width: 20%') Summ
+        .table__cell(style='width: 20%') Credit in summ
+        .table__cell(style='width: 20%') Percentage in summ
+        .table__cell(style='width: 20%') Credit balance
+
+        .table__cell(style='width: 20%') №
+        .table__cell(style='width: 20%') Date
+        .table__cell(style='width: 20%') Summ
+        .table__cell(style='width: 20%') Credit un summ
+        .table__cell(style='width: 20%') Percentage in summ
+        .table__cell(style='width: 20%') Credit balance
+      block scripts

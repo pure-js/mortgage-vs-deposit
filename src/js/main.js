@@ -1,0 +1,2 @@
+setCurrentDate();
+calc();
