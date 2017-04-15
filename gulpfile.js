@@ -10,7 +10,7 @@ const clean = () => del([ paths.build, paths.dev, '.publish' ]);
 exports.clean = clean;
 
 gulp.task('deploy', () =>
-  gulp.src(paths.build + '**/*')
+  gulp.src(paths.dev + '**/*')
     .pipe(plugins.ghPages())
 );
 
